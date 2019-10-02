@@ -8,7 +8,15 @@ int main(){
 bool istGrossBuchstabe;
 char c;
 cin >> c;
-istGrossBuchstabe = (c >= 'A') && (c <= 'Z');
+
+if ((c >= 'A') && (c <= 'Z')){
+	istGrossBuchstabe = true;
+}
+else{
+	istGrossBuchstabe = false;
+}
+//alternativ: istGrossBuchstabe = (c >= 'A') && (c <= 'Z');
+
 cout << istGrossBuchstabe<<'\n'; // Wandlung in int
 cout.setf(ios_base::boolalpha); // Textformat einschalten
 cout << istGrossBuchstabe<<'\n'; // true oder false
@@ -22,13 +30,15 @@ cout << wahrheitswert << '\n'; // 0, d.h. false
 // wird durch die Negation eine 0:
 int i {17};
 int j {!i}; // 0 (implizite Typumwandlung)
+double q {0.0};
 cout << "j is now: "<< j << '\n';
 i= !j;
 cout << "i is now: "<< i << '\n';
 wahrheitswert = 99;
 cout.setf(ios_base::boolalpha);
 cout << wahrheitswert << '\n';
-
+cout << (bool)q << '\n';
+cout << (bool)0.1 << '\n';
 int f {2};
 int g {10};
 int& r {f};
@@ -47,4 +57,10 @@ double e = 3/4;
 cout << e<< '\n';
 e = 3./4;
 cout << e<< '\n';
+int o =1;
+if (o++) o++;
+cout << o<< '\n';
+a=10;
+int max = a > b ? a : b;
+cout << max<< '\n';
 }
