@@ -1,10 +1,21 @@
 #include<iostream>
 #include<limits>
-#include<cstdint>
+#include<cmath>
 using namespace std;
 
 int main(){
-size_t f = 2;
+float f;
+const float PI = 3.1415926f;
+cout<< "please input a number:\n";
+cin >> f;
+cout <<"your number = " << f <<'\n';
+cout <<"fabs() = " << fabs(f) <<'\n';
+cout <<"sqrt() = " << sqrt(f) <<'\n';
+cout <<"exp() = " << exp(f) <<'\n';
+cout <<"sin() = " << sin(f) <<'\n';
+cout <<"cos() = " << cos(f) <<'\n';
+cout <<"log() = " << log(f) <<'\n';
+cout <<"pi = "<< PI<<'\n';
 
-cout << f;
+return 0;
 }

@@ -23,14 +23,12 @@ int main(){
 	cout<< "instead of 50 000 000 000, you got "<< cl;
 	al = (numeric_limits<long>::max()/2)+1000;
 	cout << "2 * "<< al << " = " << (2*al) << "?\n";
-	int f = 3;
-	int g = f;
-	int h;
-	f = f^3;
-	h = g>>2;
-	cout << ~f <<" "<< -g <<" "<< h <<'\n';
 	
-	
-	
+	float a{1.234567E-7f};
+	float b{1.000000f};
+	float c{-b};
+	cout << "imprecision for float-arithmetic:\n";
+	cout << "(a+b)+c = " << (a+b)+c <<'\n';
+	cout << "a+(b+c) = " << a+(b+c) <<'\n';
 	return 0;
 }

@@ -15,4 +15,3 @@ int main(){ //sum of two numbers
 	cout << "Sum = " << sum << '\n' << sum << " = " << summand1 << "+" << summand2;
 	return 0;
 }
-
